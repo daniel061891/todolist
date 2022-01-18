@@ -1,0 +1,226 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+i {
+  pointer-events: none;
+}
+
+body {
+  background: url("../bg.jpg");
+  background-size: cover;
+}
+
+header {
+  height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: red;
+  margin-bottom: 4rem;
+}
+
+form {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 4rem;
+}
+
+form input,
+form button {
+  padding: 0.25rem 0.1rem;
+  border-radius: 0.5rem;
+  border: none;
+  border: 1.8px solid black;
+  margin: 0rem 0.2rem;
+  font-size: 1.3rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+          box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+form input::-webkit-outer-spin-button,
+form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+form input[type="number"] {
+  width: 60px;
+  text-align: center;
+}
+
+form button {
+  padding: 0.5rem 0.8rem;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+form button:hover {
+  background-color: #ced4da;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+          box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+div.sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 4rem;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+div.sort button {
+  padding: 0.5rem 0.75rem;
+  font-size: 1.5rem;
+  background-color: white;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+          box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  color: black;
+  width: 25vw;
+  height: 9vh;
+  border-radius: 1rem;
+  border: none;
+  border: 1.8px solid black;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+div.sort button:hover {
+  background-color: #ced4da;
+}
+
+section.todoList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.todoList div.todoDiv {
+  width: 40vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.5rem;
+}
+
+section.todoList div.todoDiv p {
+  width: 30%;
+  background-color: white;
+  text-align: center;
+  font-size: 1.7rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 1rem;
+}
+
+section.todoList div.todoDiv button {
+  font-size: 2rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+section.todoList div.todoDiv .check {
+  background-color: lime;
+  color: white;
+}
+
+section.todoList div.todoDiv .check:hover {
+  background-color: #00b400;
+  color: white;
+}
+
+section.todoList div.todoDiv .trash {
+  background-color: red;
+  color: white;
+}
+
+section.todoList div.todoDiv .trash:hover {
+  background-color: #b40000;
+  color: white;
+}
+
+@-webkit-keyframes scaleBig {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scaleBig {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes scaleSmall {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes scaleSmall {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+.done {
+  opacity: 0.7;
+  text-decoration: line-through;
+}
+/*# sourceMappingURL=style.css.map */
