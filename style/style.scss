@@ -7,15 +7,14 @@ i {
   pointer-events: none;
 }
 body {
-  background: url("../bg.jpg");
-  background-size: cover;
+  background: linear-gradient(90deg, rgb(181, 252, 134), rgb(40, 189, 226));
 }
 header {
   height: 15vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgb(255, 0, 0);
+  color: rgb(0, 0, 0);
   margin-bottom: 4rem;
 }
 form {
